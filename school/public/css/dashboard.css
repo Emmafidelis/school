@@ -1,0 +1,34 @@
+.dashboard {
+  margin: 20px;
+}
+
+.dashboard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.dashboard ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dashboard ul li {
+  margin: 10px 0;
+}
+
+.dashboard ul li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.dashboard ul li a:hover {
+  text-decoration: underline;
+}
+
+#recent-enrollments div {
+  background-color: #f8f9fa;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+}

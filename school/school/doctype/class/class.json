@@ -5,43 +5,52 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "class_name",
-  "teacher",
-  "start",
-  "end",
-  "classroom"
+  "course_id",
+  "faculty_id",
+  "schedule",
+  "classroom",
+  "term_id",
+  "room_id"
  ],
  "fields": [
-  {
-   "fieldname": "class_name",
-   "fieldtype": "Data",
-   "label": "Class Name"
-  },
-  {
-   "fieldname": "teacher",
-   "fieldtype": "Link",
-   "label": "Teacher",
-   "options": "Teacher"
-  },
-  {
-   "fieldname": "start",
-   "fieldtype": "Datetime",
-   "label": "Start"
-  },
-  {
-   "fieldname": "end",
-   "fieldtype": "Datetime",
-   "label": "End"
-  },
   {
    "fieldname": "classroom",
    "fieldtype": "Data",
    "label": "Classroom"
+  },
+  {
+   "fieldname": "course_id",
+   "fieldtype": "Link",
+   "label": "Course Id",
+   "options": "Course"
+  },
+  {
+   "fieldname": "faculty_id",
+   "fieldtype": "Link",
+   "label": "Faculty Id",
+   "options": "Faculty"
+  },
+  {
+   "fieldname": "schedule",
+   "fieldtype": "Data",
+   "label": "Schedule"
+  },
+  {
+   "fieldname": "term_id",
+   "fieldtype": "Link",
+   "label": "Term Id",
+   "options": "Semester"
+  },
+  {
+   "fieldname": "room_id",
+   "fieldtype": "Link",
+   "label": "Room Id",
+   "options": "Room"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-20 15:03:48.567180",
+ "modified": "2025-02-05 17:05:09.104295",
  "modified_by": "Administrator",
  "module": "School",
  "name": "Class",

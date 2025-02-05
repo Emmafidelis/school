@@ -1,0 +1,21 @@
+body {
+  padding-top: 56px;
+}
+
+.jumbotron {
+  background-color: #f8f9fa;
+  padding: 2rem 1rem;
+}
+
+.jumbotron .btn {
+  margin-right: 10px;
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+}
+
+.row h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}

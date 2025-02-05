@@ -1,47 +1,44 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-01-20 14:36:08.158587",
+ "creation": "2025-02-05 17:02:18.575317",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "student",
-  "class_id",
-  "enrollment_date",
-  "status"
+  "building_id",
+  "room_no",
+  "capacity",
+  "type"
  ],
  "fields": [
   {
-   "fieldname": "student",
+   "fieldname": "building_id",
    "fieldtype": "Link",
-   "label": "Student Id",
-   "options": "Student"
+   "label": "Building Id",
+   "options": "Building"
   },
   {
-   "fieldname": "enrollment_date",
-   "fieldtype": "Date",
-   "label": "Enrollment Date"
+   "fieldname": "room_no",
+   "fieldtype": "Data",
+   "label": "Room No"
   },
   {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "Enrolled\nDropped"
+   "fieldname": "capacity",
+   "fieldtype": "Data",
+   "label": "Capacity"
   },
   {
-   "fieldname": "class_id",
-   "fieldtype": "Link",
-   "label": "Class Id",
-   "options": "Class"
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
   }
  ],
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "links": [],
- "modified": "2025-02-03 15:32:23.990858",
+ "modified": "2025-02-05 17:05:17.971071",
  "modified_by": "Administrator",
  "module": "School",
- "name": "Enrollment",
+ "name": "Room",
  "owner": "Administrator",
  "permissions": [
   {

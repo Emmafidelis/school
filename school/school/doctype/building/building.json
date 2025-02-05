@@ -1,45 +1,37 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-01-20 14:42:31.688907",
+ "creation": "2025-02-05 17:00:52.996813",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "enrollment_id",
-  "assessment_id",
-  "score",
-  "grade"
+  "building_name",
+  "code",
+  "location"
  ],
  "fields": [
   {
-   "fieldname": "score",
-   "fieldtype": "Float",
-   "label": "Score"
-  },
-  {
-   "fieldname": "grade",
+   "fieldname": "building_name",
    "fieldtype": "Data",
-   "label": "Grade"
+   "label": "Building Name"
   },
   {
-   "fieldname": "enrollment_id",
-   "fieldtype": "Link",
-   "label": "Enrollment Id",
-   "options": "Enrollment"
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "label": "Code"
   },
   {
-   "fieldname": "assessment_id",
-   "fieldtype": "Link",
-   "label": "Assessment Id",
-   "options": "Assessment"
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-05 16:52:44.861261",
+ "modified": "2025-02-05 17:05:27.047945",
  "modified_by": "Administrator",
  "module": "School",
- "name": "Grade",
+ "name": "Building",
  "owner": "Administrator",
  "permissions": [
   {

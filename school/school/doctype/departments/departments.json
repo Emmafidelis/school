@@ -1,45 +1,32 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-01-20 14:42:31.688907",
+ "creation": "2025-02-03 15:29:02.028587",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "enrollment_id",
-  "assessment_id",
-  "score",
-  "grade"
+  "depart_name",
+  "head_of_department"
  ],
  "fields": [
   {
-   "fieldname": "score",
-   "fieldtype": "Float",
-   "label": "Score"
-  },
-  {
-   "fieldname": "grade",
+   "fieldname": "depart_name",
    "fieldtype": "Data",
-   "label": "Grade"
+   "label": "Depart Name"
   },
   {
-   "fieldname": "enrollment_id",
+   "fieldname": "head_of_department",
    "fieldtype": "Link",
-   "label": "Enrollment Id",
-   "options": "Enrollment"
-  },
-  {
-   "fieldname": "assessment_id",
-   "fieldtype": "Link",
-   "label": "Assessment Id",
-   "options": "Assessment"
+   "label": "Head Of Department",
+   "options": "Faculty"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-05 16:52:44.861261",
+ "modified": "2025-02-03 15:31:02.552012",
  "modified_by": "Administrator",
  "module": "School",
- "name": "Grade",
+ "name": "Departments",
  "owner": "Administrator",
  "permissions": [
   {

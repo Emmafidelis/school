@@ -5,31 +5,11 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "student",
-  "course",
-  "class",
+  "enrollment_id",
   "date",
   "status"
  ],
  "fields": [
-  {
-   "fieldname": "student",
-   "fieldtype": "Link",
-   "label": "Student",
-   "options": "Student"
-  },
-  {
-   "fieldname": "course",
-   "fieldtype": "Link",
-   "label": "Course",
-   "options": "Course"
-  },
-  {
-   "fieldname": "class",
-   "fieldtype": "Link",
-   "label": "Class",
-   "options": "Class"
-  },
   {
    "fieldname": "date",
    "fieldtype": "Date",
@@ -40,11 +20,17 @@
    "fieldtype": "Select",
    "label": "Status",
    "options": "Present\nAbsent"
+  },
+  {
+   "fieldname": "enrollment_id",
+   "fieldtype": "Link",
+   "label": "Enrollment Id",
+   "options": "Enrollment"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-20 14:42:08.031334",
+ "modified": "2025-02-05 16:44:45.427588",
  "modified_by": "Administrator",
  "module": "School",
  "name": "Attendance",

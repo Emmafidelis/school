@@ -1,27 +1,23 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-01-20 14:30:38.442389",
+ "creation": "2025-02-05 16:46:47.033540",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "code",
+  "class_id",
   "title",
-  "description",
-  "credits",
-  "department_id",
-  "students"
+  "type",
+  "max_score",
+  "weight",
+  "due_date"
  ],
  "fields": [
   {
-   "fieldname": "description",
-   "fieldtype": "Text",
-   "label": "Description"
-  },
-  {
-   "fieldname": "code",
-   "fieldtype": "Data",
-   "label": "Code"
+   "fieldname": "class_id",
+   "fieldtype": "Link",
+   "label": "Class Id",
+   "options": "Class"
   },
   {
    "fieldname": "title",
@@ -29,29 +25,32 @@
    "label": "Title"
   },
   {
-   "fieldname": "credits",
-   "fieldtype": "Int",
-   "label": "Credits"
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
   },
   {
-   "fieldname": "department_id",
-   "fieldtype": "Link",
-   "label": "Department Id",
-   "options": "Departments"
+   "fieldname": "max_score",
+   "fieldtype": "Data",
+   "label": "Max Score"
   },
   {
-   "fieldname": "students",
-   "fieldtype": "Link",
-   "label": "Students",
-   "options": "Student"
+   "fieldname": "weight",
+   "fieldtype": "Data",
+   "label": "Weight"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-05 20:08:35.732948",
+ "modified": "2025-02-05 16:49:34.641710",
  "modified_by": "Administrator",
  "module": "School",
- "name": "Course",
+ "name": "Assessment",
  "owner": "Administrator",
  "permissions": [
   {

@@ -1,47 +1,39 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-01-20 14:36:08.158587",
+ "creation": "2025-02-03 11:25:42.793195",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "student",
-  "class_id",
-  "enrollment_date",
-  "status"
+  "user_id",
+  "department_id",
+  "position"
  ],
  "fields": [
   {
-   "fieldname": "student",
+   "fieldname": "user_id",
    "fieldtype": "Link",
-   "label": "Student Id",
-   "options": "Student"
+   "label": "User Id",
+   "options": "User"
   },
   {
-   "fieldname": "enrollment_date",
-   "fieldtype": "Date",
-   "label": "Enrollment Date"
-  },
-  {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "Enrolled\nDropped"
-  },
-  {
-   "fieldname": "class_id",
+   "fieldname": "department_id",
    "fieldtype": "Link",
-   "label": "Class Id",
-   "options": "Class"
+   "label": "Department Id",
+   "options": "Sector"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "label": "Position"
   }
  ],
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "links": [],
- "modified": "2025-02-03 15:32:23.990858",
+ "modified": "2025-02-03 11:27:20.185036",
  "modified_by": "Administrator",
  "module": "School",
- "name": "Enrollment",
+ "name": "Faculty",
  "owner": "Administrator",
  "permissions": [
   {

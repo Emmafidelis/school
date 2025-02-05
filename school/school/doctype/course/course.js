@@ -1,8 +1,18 @@
-// Copyright (c) 2025, Emmanuel Kagombora and contributors
-// For license information, please see license.txt
-
-// frappe.ui.form.on("Course", {
-// 	refresh(frm) {
-
-// 	},
-// });
+frappe.ui.form.on('Course', {
+  refresh(frm) {
+    frm.add_custom_button('Enroll Student', () => {
+      frappe.prompt([
+        { label: 'Student', fieldname: 'students', fieldtype: 'Link', options: 'Student' }
+      ], (values) => {
+        frappe.call({
+          method: 'school.api.enroll_student',
+          args: {
+            student: values.student,
+            course: frm.doc.name
+          },
+          callback: () => frappe.show_alert('Enrolled!')
+        });
+      });
+    });
+  }
+});

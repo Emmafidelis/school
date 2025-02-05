@@ -1,37 +1,26 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-01-20 14:30:38.442389",
+ "creation": "2025-02-03 15:21:14.989192",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "program_name",
   "code",
-  "title",
-  "description",
-  "credits",
   "department_id",
-  "students"
+  "type",
+  "credits_required"
  ],
  "fields": [
   {
-   "fieldname": "description",
-   "fieldtype": "Text",
-   "label": "Description"
+   "fieldname": "program_name",
+   "fieldtype": "Data",
+   "label": "Program Name"
   },
   {
    "fieldname": "code",
    "fieldtype": "Data",
    "label": "Code"
-  },
-  {
-   "fieldname": "title",
-   "fieldtype": "Data",
-   "label": "Title"
-  },
-  {
-   "fieldname": "credits",
-   "fieldtype": "Int",
-   "label": "Credits"
   },
   {
    "fieldname": "department_id",
@@ -40,18 +29,23 @@
    "options": "Departments"
   },
   {
-   "fieldname": "students",
-   "fieldtype": "Link",
-   "label": "Students",
-   "options": "Student"
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Diploma\nUndergraduate\nPost-Graduate\nMasters"
+  },
+  {
+   "fieldname": "credits_required",
+   "fieldtype": "Data",
+   "label": "Credits Required"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-05 20:08:35.732948",
+ "modified": "2025-02-03 15:31:53.363798",
  "modified_by": "Administrator",
  "module": "School",
- "name": "Course",
+ "name": "Programme",
  "owner": "Administrator",
  "permissions": [
   {
